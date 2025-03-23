@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cart.js"></script>
+</head>
+<body>
+    <div class="container">
+<div class="product">
+    <h2>Americano 320mL</h2>
+    <img src="assets/p1.jpg" alt="" width="350" height="350">
+    <h3>Price: Php 100.50</h3>
+    <button class="buttonAdd" onclick="addToCart('Americano 320 mL', 100.50)">Add to Cart</button>
+    <button class="buttonRem" onclick="removeFromCart('Ameicano 320 mL', 100.50)">Remove from Cart</button>
+</div>
+<div class="product">
+    <h2>Cappuccino 330 mL</h2>
+    <img src="assets/p2.jpg" alt="" width="350" height="350">
+    <h3>Price: Php 120.50</h3>
+    <button class="buttonAdd" onclick="addToCart('Cappuccino 320 mL', 120.50)">Add to Cart</button>
+    <button class="buttonRem" onclick="removeFromCart('Cappuccino 320 mL', 120.50)">Remove from Cart</button>
+</div>
+<div class="cart">
+    <h2>Customer's Cart</h2>
+    <ul id="products"></ul>
+</div>
+    </div>
+</body>
+</html>
